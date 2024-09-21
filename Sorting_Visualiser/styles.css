@@ -1,0 +1,139 @@
+/* Body styles */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Coding style font */
+    background-color: #1e1e1e; /* Dark background color */
+    color: #c5c6c7; /* Light text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+/* Heading styles */
+h1 {
+    color: #66fcf1; /* Cyan color for heading */
+    margin-bottom: 20px;
+    font-size: 2em; /* Larger font size for the heading */
+}
+
+/* Controls section styles */
+#controls {
+    margin-bottom: 20px;
+}
+
+#controls input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #45a29e;
+    border-radius: 5px;
+    background-color: #0b0c10; /* Darker background for inputs */
+    color: #c5c6c7; /* Light text color */
+    font-size: 1em; /* Consistent font size */
+}
+
+#controls button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Space between buttons */
+    font-size: 1em; /* Consistent font size */
+}
+
+/* Specific button styles */
+#controls #bubbleSortBtn,
+#controls #quickSortBtn,
+#controls #mergeSortBtn,
+#controls #selectionSortBtn,
+#controls #insertionSortBtn,
+#controls #heapSortBtn {
+    background-color: #45a29e;
+    color: #0b0c10;
+}
+
+#controls #bubbleSortBtn:hover,
+#controls #quickSortBtn:hover,
+#controls #mergeSortBtn:hover,
+#controls #selectionSortBtn:hover,
+#controls #insertionSortBtn:hover,
+#controls #heapSortBtn:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+
+#controls #stopBtn {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: #0b0c10;
+}
+
+#controls #stopBtn:hover {
+    background: linear-gradient(45deg, #ff4757, #ff6b6b);
+    color: #0b0c10;
+}
+
+#controls #clearBtn {
+    background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+    color: #fff;
+}
+
+#controls #clearBtn:hover {
+    background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+    color: #fff;
+}
+
+/* Visualization container styles */
+#visualization {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 500px;
+    border: 1px solid #45a29e;
+    background-color: #0b0c10;
+    overflow: hidden; /* Ensure bars don't overflow */
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Add shadow for better visual separation */
+}
+
+/* Bar styles */
+.bar {
+    width: 20px;
+    margin: 2px;
+    position: relative;
+    transition: height 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white; /* Label text color */
+    font-size: 12px;
+}
+
+.bar-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Bar color styles based on value */
+.bar.red {
+    background-color: #e74c3c; /* Red color for large values */
+}
+
+.bar.yellow {
+    background-color: #f1c40f; /* Yellow color for medium values */
+}
+
+.bar.green {
+    background-color: #2ecc71; /* Green color for small values */
+}
