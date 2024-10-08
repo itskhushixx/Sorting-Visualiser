@@ -22,4 +22,5 @@ The Sorting Visualiser is a web application that helps users visualize various s
 '''bash
 
    cd Sorting-Visualiser
+   
 3.Open index.html in your web browser.
